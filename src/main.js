@@ -1,6 +1,7 @@
 const EventEmitter = require("eventemitter3");
 const phin = require("phin");
 const SBLError = require("./error");
+const fetch = require("node-fetch")
 
 class SBLApi extends EventEmitter {
 	/**
