@@ -135,9 +135,7 @@ class SBLApi extends EventEmitter {
 					});
 			}
 
-			return {
-				success: p.statusCode === 200
-			};
+			return p.body;
 		}).catch(err => {
 			throw err;
 		});
