@@ -92,21 +92,16 @@ class SBLApi extends EventEmitter {
 	 * @returns {Promise<{ success: boolean }>}
 	 */
 	async postServerCount(server_count = 0, id = this.id, auth = this.token) {
-		return phin({
+		var ropts = {
 			method: "POST",
 			url: `https://smartbots.tk/api/auth/stats/${id || this.id}`,
-			body: {
-				"server_count": server_count
-			},
+			body: {"server_count": server_count},
 			headers: {
 				"authorization": auth || this.token,
 				"Content-Type": "application/json"
 			}
-		}).then((p) => {
-			return p.text();
-		}).catch(err => {
-			throw err;
-		});
+		}
+		fetch(ropts.url,ropts).then(response => reponse.text()).then(console.log).catch(console.error);
 	}
 }
 
