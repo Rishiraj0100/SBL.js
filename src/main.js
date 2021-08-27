@@ -1,7 +1,7 @@
 const EventEmitter = require("eventemitter3");
 const phin = require("phin");
 const SBLError = require("./error");
-const fetch = require("node-fetch")
+const fetch = require("node-fetch");
 
 class SBLApi extends EventEmitter {
 	/**
@@ -102,7 +102,7 @@ class SBLApi extends EventEmitter {
 				"Content-Type": "application/json"
 			}
 		}
-		fetch(ropts.url,ropts).then(response => response.text()).then(console.log).catch(console.error);
+		fetch(ropts.url,ropts).then(response => return response.text()).catch(console.error);
 	}
 }
 
