@@ -1,0 +1,23 @@
+{
+  "name": "SBL",
+  "version": "0.0.01",
+  "description": "No desc",
+  "homepage": "https://smartbots.tk",
+  "bugs": {
+    "url": "https://github.com/Rishiraj0100/SBL.js/issues"
+  },
+  "license": "MIT",
+  "author": "BDistin",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rishiraj0100/SBL.js.git"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=12"
+  }
+}
