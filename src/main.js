@@ -103,7 +103,7 @@ class SBLApi extends EventEmitter {
 				"Content-Type": "application/json"
 			}
 		}).then((p) => {
-			return p.body;
+			return p.text;
 		}).catch(err => {
 			throw err;
 		});
