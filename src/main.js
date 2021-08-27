@@ -96,7 +96,7 @@ class SBLApi extends EventEmitter {
 		var ropts = {
 			method: "POST",
 			url: `https://smartbots.tk/api/auth/stats/${id || this.id}`,
-			body: JSON.stringify({"server_count": 3}),
+			body: JSON.stringify({"server_count": server_count || 1}),
 			headers: {
 				"authorization": auth || this.token,
 				"Content-Type": "application/json"
