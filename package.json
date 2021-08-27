@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "eventemitter3": "^4.0.0",
-    "phin": "^3.4.0"
+    "phin": "^3.4.0",
     "node-fetch": "^2.6.1"
   },
   "engines": {
