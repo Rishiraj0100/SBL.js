@@ -101,8 +101,7 @@ class SBLApi extends EventEmitter {
 			headers: {
 				"authorization": auth || this.token,
 				"Content-Type": "application/json"
-			},
-			parse: "json"
+			}
 		}).then((p) => {
 			if (p.statusCode !== 200) switch (p.statusCode) {
 				case 400:
