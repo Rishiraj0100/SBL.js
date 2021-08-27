@@ -34,7 +34,7 @@ class SBLApi extends EventEmitter {
 	 * @param {string} [auth] - different authorization to use, if needed
 	 * @returns {Promise<APIBotLikes>} 
 	 */
-	async getBotLiked(id = this.id, auth = this.token) {
+	async getBotLikes(id = this.id, auth = this.token) {
 		if (!id) throw new TypeError("missing bot id");
 		return phin({
 			url: `https://smartbots.tk/api/auth/liked/${id}/`,
