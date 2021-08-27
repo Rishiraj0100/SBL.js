@@ -94,12 +94,12 @@ class SBLApi extends EventEmitter {
 	async postServerCount(server_count = 0, id = this.id, auth = this.token) {
 		return phin({
 			method: "POST",
-			url: `https://smartbots.tk/api/auth/stats/${id}`,
+			url: `https://smartbots.tk/api/auth/stats/${id || this.id}`,
 			body: {
-				server_count: server_count
+				"server_count": server_count
 			},
 			headers: {
-				"authorization": auth,
+				"authorization": auth || this.token,
 				"Content-Type": "application/json"
 			},
 			parse: "json"
