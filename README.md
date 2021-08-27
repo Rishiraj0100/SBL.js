@@ -3,7 +3,7 @@
 
 API wrapper for [smartbots.tk](https://smartbots.tk) API
 
-
+<!--
 ## Deployment
 
 To deploy this project run
@@ -21,16 +21,17 @@ Install my-project with npm
   npm install SBL
   cd SBL
 ```
+-->
     
 ## Documentation
 
-Under construction [Documentation](https://linktodocumentation)
+Under construction [Documentation](https://sbl.rtfd.io)
 
   
 ## SBL STUFFS
 
  - [WEBSITE](https://smartbots.tk)
- - [DISCORD](https://discord.gg/https://discord.gg/v4xbS3V6tq)
+ - [DISCORD](https://discord.gg/v4xbS3V6tq)
  
 
   
