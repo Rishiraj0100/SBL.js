@@ -103,38 +103,6 @@ class SBLApi extends EventEmitter {
 				"Content-Type": "application/json"
 			}
 		}).then((p) => {
-			if (p.statusCode !== 200) switch (p.statusCode) {
-				case 400:
-				case 401:
-				case 403:
-					throw new SBLError({
-						statusCode: p.statusCode,
-						body: p.body,
-						type: "request error"
-					});
-					break;
-
-				case 404:
-					return null;
-					break;
-
-				case 500:
-				case 502:
-					throw new SBLError({
-						statusCode: p.statusCode,
-						body: p.body,
-						type: "server error"
-					});
-					break;
-
-				default:
-					throw new SBLError({
-						statusCode: p.statusCode,
-						body: p.body,
-						type: "unknown"
-					});
-			}
-
 			return p.body;
 		}).catch(err => {
 			throw err;
