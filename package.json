@@ -7,16 +7,19 @@
     "url": "https://github.com/Rishiraj0100/SBL.js/issues"
   },
   "license": "MIT",
-  "author": "BDistin",
+  "author": "Rishiraj0100",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rishiraj0100/SBL.js.git"
+    "url": "git+https://github.com/Rishiraj0100/SBL.js.git"
   },
-  "scripts": {},
-  "dependencies": {},
-  "peerDependencies": {},
-  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eventemitter3": "^4.0.0",
+    "phin": "^3.4.0"
+  },
   "engines": {
     "node": ">=12"
   }
