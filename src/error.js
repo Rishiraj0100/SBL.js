@@ -1,6 +1,6 @@
 module.exports = class SBLError extends Error {
 	/**
-	 * SBL api error
+	 * SBL Api error
 	 * @param {any} message - the error message
 	 */
 	constructor(message) {
