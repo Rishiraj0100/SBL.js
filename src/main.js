@@ -102,7 +102,7 @@ class SBLApi extends EventEmitter {
 				"Content-Type": "application/json"
 			}
 		}
-		fetch(ropts.url,ropts).then(response => return response.text()).catch(console.error);
+		fetch(ropts.url,ropts).then((response) => return response.text()).catch(console.error);
 	}
 }
 
