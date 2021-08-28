@@ -74,7 +74,11 @@ class SBLApi extends EventEmitter {
 						type: "unknown"
 					});
 			}
-
+			if (!b.success) {
+				trow new SBLError({
+					body: b.body,
+				});
+			}
 			return {
 				likers: b.body.users
 			};
