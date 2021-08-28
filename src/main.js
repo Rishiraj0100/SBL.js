@@ -75,7 +75,7 @@ class SBLApi extends EventEmitter {
 					});
 			}
 			if (!b.success) {
-				trow new SBLError({
+				throw new SBLError({
 					body: b.body,
 				});
 			}
