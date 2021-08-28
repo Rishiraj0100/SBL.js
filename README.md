@@ -25,7 +25,7 @@ Install my-project with npm
     
 ## Documentation
 
-Under construction [Documentation](https://sbl.rtfd.io)
+Under construction [Documentation](https://sbljs.rtfd.io)
 
   
 ## SBL STUFFS
