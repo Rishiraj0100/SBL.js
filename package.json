@@ -1,6 +1,6 @@
 {
   "name": "@rishiraj0100/sbl.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A JavaScript API wrapper for SmartBots.tk API",
   "homepage": "https://smartbots.tk",
   "bugs": {
