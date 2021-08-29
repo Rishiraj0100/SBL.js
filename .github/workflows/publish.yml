@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
+          scope: '@Rishiraj0100'
       - run: npm install
       - run: npm publish
         env:
