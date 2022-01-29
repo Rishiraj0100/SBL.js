@@ -1,8 +1,10 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Home | Home</title>
+    <title>Source: error.js | Source: error.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -24,7 +26,7 @@
         
     </div>
     <div class="title">
-        <h1><a href="index.html" class="link">Home</a></h1>
+        <h1><a href="index.html" class="link">Source: error.js</a></h1>
         
     </div>
     <div class="search-container" id="search-container">
@@ -42,50 +44,28 @@
 
 
     
-
-
-
-
-
-
-
-
-
-    
-
-
     <section>
-        <article class="readme"><h1>SBL.js</h1>
-<p>API wrapper for <a href="https://smartbots.tk">smartbots.tk</a> API</p>
-<!--
-## Deployment
+        <article>
+            <pre class="prettyprint source linenums"><code>class SBLError extends Error {
+	/**
+	 * SBL Api error
+	 * @param {any} message - the error message
+	 */
+	constructor(message) {
+		if (typeof message !== "string") {
+			if (typeof message === "object") message = JSON.stringify(message);
+			if (message instanceof Buffer || message instanceof Function) message = message.toString();
+			// if (p instanceof Promise) m = await p;
+		}
 
-To deploy this project run
+		super(message);
+	}
+}
 
-```bash
-  npm i SBL
-```
-
-  
-## Installation
-
-Install my-project with npm
-
-```bash
-  npm install SBL
-  cd SBL
-```
--->
-<h2>Documentation</h2>
-<p>Under construction <a href="https://sbljs.rtfd.io">Documentation</a></p>
-<h2>SBL STUFFS</h2>
-<ul>
-<li><a href="https://smartbots.tk">WEBSITE</a></li>
-<li><a href="https://discord.gg/v4xbS3V6tq">DISCORD</a></li>
-</ul></article>
+module.exports = SBLError;
+</code></pre>
+        </article>
     </section>
-
-
 
 
 
@@ -102,7 +82,7 @@ Install my-project with npm
 <script src="scripts/linenumber.js"></script>
 
     <script>
-        var id = 'package:undefined_sub'.replace(/"/g, '_');
+        var id = '_sub'.replace(/"/g, '_');
         var selectedApi = document.getElementById(id); // do not use jquery selector
         var $selectedApi = $(selectedApi);
 
