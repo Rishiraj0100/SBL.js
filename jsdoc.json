@@ -1,8 +1,8 @@
 {
   "source": {
     "include": ["src"],
-    "includePattern": ".*\.js$",
-    "excludePattern": "(node_modules/|docs|\.github/)"
+    "includePattern": ".*\\.js$",
+    "excludePattern": "(node_modules/|docs|\\.github/)"
   },
   "plugins": ["plugins/markdown"],
   "templates": {
