@@ -120,7 +120,3 @@ module.exports = SBLApi;
  * @prop {string[]} likers - the likers of last 12 hours
  */
 
-/**
- * @prop {string} id - the current api bot's id
- * @prop {string} token - the current api token
- */
