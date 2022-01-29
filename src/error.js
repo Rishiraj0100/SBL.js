@@ -1,4 +1,4 @@
-module.exports = class SBLError extends Error {
+class SBLError extends Error {
 	/**
 	 * SBL Api error
 	 * @param {any} message - the error message
@@ -13,3 +13,5 @@ module.exports = class SBLError extends Error {
 		super(message);
 	}
 }
+
+module.exports = SBLError;
