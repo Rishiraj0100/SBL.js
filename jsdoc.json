@@ -1,7 +1,7 @@
 {
   "source": {
-    "includePattern": "(main|error)",
-    "excludePattern": "index",
+    "includePattern": "(main|error).*",
+    "excludePattern": "index.*"
   },
   "plugins": ["plugins/markdown"],
   "templates": {
