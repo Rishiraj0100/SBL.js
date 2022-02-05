@@ -1,11 +1,18 @@
 {
   "source": {
-    "include": ["src/main.js", "src/error.js"]
+    "includePattern": "(main|error)",
+    "excludePattern": "index",
   },
   "plugins": ["plugins/markdown"],
   "templates": {
     "cleverLinks": true,
-    "monospaceLinks": true
+    "monospaceLinks": true,
+    "logo": {
+      "url": "https://cdn.discordapp.com/icons/878513630793056297/e206ad3903fc35b98fe2ef505897bb5d.png?size=1024",
+      "link": "https://js.docs.smartbots.tk"
+    },
+    "name": "Js Docs - SmartBots | SBL",
+    "footerText": "SmartBots | SBL"
   },
   "opts": {
     "recurse": true,
