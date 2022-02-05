@@ -9,7 +9,8 @@
     "monospaceLinks": true,
     "logo": {
       "url": "https://cdn.discordapp.com/icons/878513630793056297/e206ad3903fc35b98fe2ef505897bb5d.png?size=1024",
-      "link": "https://js.docs.smartbots.tk"
+      "link": "https://js.docs.smartbots.tk",
+      "height": "200px"
     },
     "name": "Js Docs - SmartBots | SBL",
     "footerText": "SmartBots | SBL"
