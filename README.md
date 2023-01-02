@@ -13,6 +13,8 @@ npm install @rishiraj0100/sbl.js
   
 ## Documentation
 
+[Click Here](https://js.docs.smartbots.tk/)
+
 ### Classes
 
 - SBLApi   - [Click Here](https://js.docs.smartbots.tk/SBLApi.html)
